@@ -70,7 +70,7 @@ function Dashboard() {
                 .catch(err => {
                     console.error(`Error uploading image: ${err}`);
                 });
-        }, 1000);
+        }, 10000);
 
         return () => clearInterval(dashboardImgRefresher);
     }, []);
@@ -134,7 +134,7 @@ function Dashboard() {
                 </div>
             </div>
             <div className="pingButtonContainer">
-                <button className="pingButton" onClick={handlePing}>Ping Backend</button>
+                <button className="pingButton" onClick={handlePing}>see the changes Ping Backend</button>
             </div>
             {/* <div className="updateImgBtnContainer">
                 <button className="updateImgBtn" onClick={UpdateDashboard}>Update Dashboard</button>

@@ -134,7 +134,7 @@ function Dashboard() {
                 </div>
             </div>
             <div className="pingButtonContainer">
-                <button className="pingButton" onClick={handlePing}>Ping Backend</button>
+                <button className="pingButton" onClick={handlePing}> VERCEL PLEASE UPDATE Ping Backend</button>
             </div>
             {/* <div className="updateImgBtnContainer">
                 <button className="updateImgBtn" onClick={UpdateDashboard}>Update Dashboard</button>

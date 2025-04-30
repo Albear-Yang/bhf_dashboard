@@ -134,7 +134,7 @@ function Dashboard() {
                 </div>
             </div>
             <div className="pingButtonContainer">
-                <button className="pingButton" onClick={handlePing}>see the changes Ping Backend</button>
+                <button className="pingButton" onClick={handlePing}>PLEASE JUST PONG BACK</button>
             </div>
             {/* <div className="updateImgBtnContainer">
                 <button className="updateImgBtn" onClick={UpdateDashboard}>Update Dashboard</button>

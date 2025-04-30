@@ -26,7 +26,7 @@ function Dashboard() {
     const [timeElapsed, setTimeElapsed] = useState(0);
 
     // const UpdateDashboard = () => {
-    //     // API Call
+    //     // API Call√
     //     fetch('http://localhost:5000/api/update_image_ep', { method: 'PUT' })
     //         .then(res => {
     //             if (!res.ok) {
@@ -70,7 +70,7 @@ function Dashboard() {
                 .catch(err => {
                     console.error(`Error uploading image: ${err}`);
                 });
-        }, 10000);
+        }, 1000);
 
         return () => clearInterval(dashboardImgRefresher);
     }, []);

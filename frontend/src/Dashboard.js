@@ -49,7 +49,7 @@ function Dashboard() {
         const dashboardImgRefresher = setInterval(async () => {
             // https://kl4jx9kg-5000.use.devtunnels.ms
             //await fetch('https://mbs98bg1-5000.use.devtunnels.ms/api/update_image_ep', { method: 'PUT' })
-            await fetch('http://localhost:5001/api/update_image_ep', { method: 'PUT' })
+            await fetch('https://mbs98bg1-5001.use.devtunnels.ms/api/update_image_ep', { method: 'PUT' })
                 .then(res => {
                     if (!res.ok) {
                         throw new Error('Network Error Detected.');
@@ -83,7 +83,7 @@ function Dashboard() {
         return () => clearInterval(timeTicker);
     }, []);
     useEffect(() => {
-        fetch('http://localhost:5001/api/ping') // adjust port if needed
+        fetch('https://mbs98bg1-5001.use.devtunnels.ms/api/update_image_ep') // adjust port if needed
         .then(res => res.json())
         .then(data => {
             console.log("Response from backend:", data.message); // should log "pong"

@@ -49,7 +49,7 @@ function Dashboard() {
         const dashboardImgRefresher = setInterval(async () => {
             // https://kl4jx9kg-5000.use.devtunnels.ms
             //await fetch('https://mbs98bg1-5000.use.devtunnels.ms/api/update_image_ep', { method: 'PUT' })
-            await fetch('https://mbs98bg1-5001.use.devtunnels.ms/api/update_image_ep', { method: 'PUT', mode: 'no-cors' })
+            await fetch('https://mbs98bg1-5001.use.devtunnels.ms/api/update_image_ep', { method: 'PUT'})
                 .then(res => {
                     if (!res.ok) {
                         throw new Error('Network Error Detected.');

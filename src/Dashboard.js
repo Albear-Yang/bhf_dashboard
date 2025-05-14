@@ -140,7 +140,7 @@ function Dashboard() {
                 <button className="updateImgBtn" onClick={UpdateDashboard}>Update Dashboard</button>
             </div> */}
         </div>
-    );
+    ); 
 }
 
 export default Dashboard;

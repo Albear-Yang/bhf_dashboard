@@ -103,7 +103,7 @@ function Dashboard() {
             <div className="imgContainer">
                 <div className='row'>
                     <div className='camImg'>
-                        <p>Front Left LOCK IN TWIN</p>
+                        <p>Front Left IN TWIN</p>
                         <div className='flImgs'>
                             <img src={flMask} className="flMask" alt="Current processed mask overlay from the front left" width={300}/>
                             <img src={flImg} className="flImg" alt="Current processed feed from the front left camera of the robot" width={300}/>

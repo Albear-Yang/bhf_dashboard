@@ -2,7 +2,7 @@ import './Dashboard.css';
 import { useState, useEffect } from 'react';
 
 const handlePing = () => {
-    fetch('https://ml2cbnw1-5001.use.devtunnels.ms/api/ping')
+    fetch('https://8tchh2g8-5001.use.devtunnels.ms/api/ping')
         .then(res => res.json())
         .then(data => {
             console.log("Ping response:", data.message);
@@ -50,7 +50,7 @@ function Dashboard() {
             //https://ml2cbnw1-5001.use.devtunnels.ms/
             // https://kl4jx9kg-5000.use.devtunnels.ms
             //await fetch('https://mbs98bg1-5000.use.devtunnels.ms/api/update_image_ep', { method: 'PUT' })
-            await fetch('https://ml2cbnw1-5001.use.devtunnels.ms/api/update_image_ep', { method: 'PUT'})
+            await fetch('https://8tchh2g8-5001.use.devtunnels.ms/api/update_image_ep', { method: 'PUT'})
                 .then(res => {
                     if (!res.ok) {
                         throw new Error('Network Error Detected.');
@@ -84,7 +84,7 @@ function Dashboard() {
         return () => clearInterval(timeTicker);
     }, []);
     useEffect(() => {
-        fetch('https://ml2cbnw1-5001.use.devtunnels.ms/api/ping') // adjust port if needed
+        fetch('https://8tchh2g8-5001.use.devtunnels.ms/api/ping') // adjust port if needed
         .then(res => res.json())
         .then(data => {
             console.log("Response from backend:", data.message); // should log "pong"
